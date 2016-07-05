@@ -15,6 +15,11 @@
  */
 // write your code here
 
+func continentAndCountries (continent: String, numbersOfCountries: Int)
+{
+    print("\(continent) is a continent which contains \(numbersOfCountries) countries")
+}
+continentAndCountries("asia", numbersOfCountries: 200)
 
 
 
@@ -25,7 +30,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello") //it was missing the argument "greeting"
 
 
 
@@ -37,7 +42,7 @@ func daysInMonth(month: String, days: String) {
     print("There are \(days) in \(month)")
 }
 
-daysInMonth("November", days: 30)
+daysInMonth("November", days: "30") //initially 'day' had the value of 30, which is an int, which the func isnt taking in, 'day' takes in a string
 
 
 
@@ -46,8 +51,11 @@ daysInMonth("November", days: 30)
  ### 4. So far, you have created functions that take two arguments. Can you create (and call) one that takes three? Try to create a function that three parameters: a beverage, the number of bottles of that beverage, and a place you can keep those bottles. Print the sentence "____ bottles of ____ on the ____ wall."
  */
 // write your code here
-
-
+func beverages (name: String, numberOfBottles: Int, placeForBottle: String)
+{
+    print("\(numberOfBottles) bottles of \(name) on the \(placeForBottle) wall")
+}
+beverages("soda", numberOfBottles: 10, placeForBottle: "meh")
 
 
 /*:
